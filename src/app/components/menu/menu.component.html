@@ -1,0 +1,9 @@
+<ul class="list-group d-flex flex-row gap-2">
+  <a
+    *ngFor="let route of routes"
+    [routerLink]="route.path"
+    routerLinkActive="active"
+    class="list-group-item flex-grow-1"
+    >{{ route.name }}</a
+  >
+</ul>
